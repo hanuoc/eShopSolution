@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace eShopSolution.Data.Entities
+namespace eShopSolution.ViewModels.Catalog.Products
 {
-	public class Product
+	public class ProductViewModel
 	{
 		public int Id { get; set; }
 		public decimal Price { get; set; }
@@ -12,11 +12,12 @@ namespace eShopSolution.Data.Entities
 		public int Stock { get; set; }
 		public int ViewCount { get; set; }
 		public DateTime DateCreated { get; set; }
+		public string Name { set; get; }
+		public string Description { set; get; }
+		public string Details { set; get; }
+		public string SeoDescription { set; get; }
+		public string SeoTitle { set; get; }
 		public string SeoAlias { get; set; }
-		public List<ProductInCategory> ProductInCategories { get; set; }
-		public List<OrderDetail> OrderDetails { get; set; }
-		public List<Cart> Carts { get; set; }
-		public List<ProductTranslation> ProductTranslations { get; set; }
-		public List<ProductImage> ProductImages { get; set; }
+		public string LanguageId { set; get; }
 	}
 }
